@@ -1,0 +1,54 @@
+{
+  "name": "unstyled-design",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Hongbusi/unocss-preset-hbs#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hongbusi/unocss-preset-hbs.git",
+    "directory": "packages/unocss-preset-hbs"
+  },
+  "bugs": {
+    "url": "https://github.com/Hongbusi/unocss-preset-hbs/issues"
+  },
+  "keywords": [
+    "vue",
+    "unocss",
+    "hongbusi"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./global": {
+      "require": "./dist/global.cjs",
+      "import": "./dist/global.js"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "unpkg": "dist/index.iife.min.js",
+  "jsdelivr": "dist/index.iife.min.js",
+  "types": "index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/types/*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}

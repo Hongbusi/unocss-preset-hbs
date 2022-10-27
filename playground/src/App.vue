@@ -1,5 +1,7 @@
 <template>
   <div class="font-sans">
-    test
+    <button class="h-button ">
+      Primary
+    </button>
   </div>
 </template>

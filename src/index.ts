@@ -5,7 +5,7 @@ export function presetHbs(): Preset {
     name: 'unocss-preset-hbs',
     shortcuts: [
       {
-        btn: 'bg-red'
+        'h-button': 'px-4 py-2 bg-red rounded text-white'
       }
     ]
   }

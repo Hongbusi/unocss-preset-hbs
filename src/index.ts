@@ -1,2 +1,12 @@
-export const one = 1
-export const two = 2
+import type { Preset } from 'unocss'
+
+export function presetHbs(): Preset {
+  return {
+    name: 'unocss-preset-hbs',
+    shortcuts: [
+      {
+        btn: 'bg-red'
+      }
+    ]
+  }
+}

@@ -29,6 +29,7 @@
     "dist"
   ],
   "scripts": {
+    "play": "pnpm -C playground run dev",
     "build": "unbuild",
     "update": "tsx scripts/update-readme.ts",
     "test": "vitest",

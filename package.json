@@ -29,7 +29,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "unbuild",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp package.json",
@@ -42,7 +42,7 @@
     "bumpp": "^8.2.1",
     "eslint": "^8.23.1",
     "typescript": "^4.8.3",
-    "unocss": "^0.47.5",
-    "vite": "^3.2.5"
+    "unbuild": "^1.0.1",
+    "unocss": "^0.47.5"
   }
 }

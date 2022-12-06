@@ -30,6 +30,9 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Update
+        run: pnpm run update
+
       - name: Publish
         run: pnpm publish --access public --no-git-checks
         env:

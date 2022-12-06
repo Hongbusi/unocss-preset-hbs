@@ -2,6 +2,7 @@
   "name": "unocss-preset-hbs",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@7.0.1",
   "description": "Hongbusi's unocss preset.",
   "author": "Hongbusi",
   "license": "MIT",

@@ -5,7 +5,7 @@ import { presetHbs } from '../src/index'
 function generate() {
   const { shortcuts } = presetHbs()
 
-  let result = '\n## Shortcuts \n\n| class | Properties |\n| ----- | ---------- |\n'
+  let result = '\n## Shortcuts \n\n| class | Properties |\n| :- | :- |\n'
 
   for (const key in shortcuts)
     result += `| \`${key}\` | \`${shortcuts[key]}\` |\n`

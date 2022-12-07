@@ -5,7 +5,7 @@ import { presetHbs } from '../src/index'
 function generate() {
   const { shortcuts } = presetHbs()
 
-  let result = '\n## Shortcuts \n\n| class | Properties |\n| :- | :- |\n'
+  let result = '\n## Shortcuts \n\n| Class | Properties |\n| :- | :- |\n'
 
   for (const key in shortcuts)
     result += `| \`${key}\` | \`${shortcuts[key]}\` |\n`
@@ -13,7 +13,7 @@ function generate() {
   return result
 }
 
-function writeToReadme(content: string) {
+function update(content: string) {
   const readmePath = path.resolve('./README.md')
   const originalContent = fse.readFileSync(readmePath, { encoding: 'utf-8' })
   const resultContent = originalContent.replace(/(?<=<!-- start -->)[^>]*(?=<!-- end -->)/gms, content)
@@ -22,7 +22,7 @@ function writeToReadme(content: string) {
 
 function main() {
   const content = generate()
-  writeToReadme(content)
+  update(content)
 }
 
 main()
